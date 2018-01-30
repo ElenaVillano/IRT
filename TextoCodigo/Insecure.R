@@ -43,6 +43,10 @@ rm(list=ls())
 # Manu
 insecure <- read.csv("~/Documents/IRT/envipe_2016_csv/clean_insecure.csv")
 
+# Dario
+setwd("~/IRT")
+insecure <- read.csv("envipe_2016_csv/clean_insecure.csv")
+
 # Convierte los si==1, no==0
 insecure <- -1*(insecure-2)
 
