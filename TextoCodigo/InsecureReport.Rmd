@@ -1,0 +1,41 @@
+---
+title: "Evaluación de la ENVIPE con TRI"
+subtitle: "Villalobos Elena, Trujano Dario y Villarreal Manuel"
+output:
+  pdf_document: default
+---
+
+El objetivo del presente trabajo fue analizar la Teoría de Respuesta al Item con una sección de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) 2016, desarrollada por la INEGI.  
+
+#Método
+La ENVIPE consta de diversas secciones de las cuales sólo se tomó la CC2 (Figura 1) para fines del trabajo. La sección CC2 contiene dos sub-cuestionarios; del primer cuestionario se quitaron las preguntas 07, 08 y 13, debido a que contenían una gran cantidad de NAs. Después sólo se tomaron a los participantes que contestaron todas las preguntas en dichos sub-cuestionarios. En total se analizaron 14528 participantes alrededor del país. La respuesta de NO se codificó con 0 y la respuesta SÍ como 1.
+
+![Sección CC2. de la ENVIPE](/Users/Ele/Documents/Psicometria/ProyectoFinal/Cuestionario.png){height=390px }
+
+#Resultados
+La Figura 2. muestra la proporción de personas que contestaron que sí en cada una de las preguntas. La pregunta que tiene mayor número de respuestas afirmativas es en la que se dejó de permitir que los menores de edad salieran solos. Consecutivamente, dejar de usar joyas y salir de noche fueron las preguntas en las que se contestó afirmativamente. Adquirir armas fue la pregunta que tuvo menores afirmaciones. 
+
+#Análisis con Modelo de Rash
+En la Figura 3. se puede observar el comportamiento teórico dada la estimación del parámetro de beta para cada item, que para la encuesta realizada dicho parámetros implica mayor percepción de inseguridad. En esta se observan varias curvas que se traslapan un poco. Así mismo se observa que los items que implican mayor percepción de inseguridad tienen menor probabilidad de ser respondidos para las personas que de hecho perciben mayor inseguridad. 
+
+La Figura 4. se observan las proporciones de personas que respondieron que si dado su valor de theta. En este gráfico los que implican mayor percepción de inseguridad (mayor dificultad) tienen el color rojo más concentrado y viceversa para los que implican menor percepción. En este gráfico es más claro que los items con mayor dificultad tienen menor proporción de personas que afirmaron las preguntas dado que tienen mayor percepción de inseguridad. 
+
+Por último la figura 5. tiene 21 sub-graficos cada uno representa dado un único parámetro de theta la proporción de afirmaciones en cada uno de los items, los cuales se encuentran ordenados del más fácil al más difícil (menor percepción de inseguridad a mayor percepción de inseguridad). En este se observa que para el valor más pequeño de theta la proporción de afirmaciones en todos los items es de cero. Conforme incrementa el valor de theta se van aumentando las proporciones para los items que implican menor percepción de inseguridad. Cabe de notar, que incluso para las thetas que tienen mayor valor, los items más difíciles tienen muy poca proporción de afirmaciones. 
+
+#Discusión
+Los resultados indican que los items que contienen mayor percepción de inseguridad pueden estár mal calibrados debido a que no necesariamente con mayor valor del atributo de interés la probabilidad de responder incremente. Contextualmente puede indicar que los items con mayor percepción de inseguridad, no necesariamente lo son para todos los participantes. 
+
+
+![Proporciones de respuestas afirmativas.](/Users/Ele/Documents/Psicometria/ProyectoFinal/TextoCodigo/Proporciones.pdf)
+
+![Curvas Teóricas dado el parámetro de beta para cada item. ](/Users/Ele/Documents/Psicometria/ProyectoFinal/TextoCodigo/Curvas.pdf)
+
+![Thetas agruapadas](/Users/Ele/Documents/Psicometria/ProyectoFinal/TextoCodigo/thetasagrupadas.pdf)
+
+![thetas](/Users/Ele/Documents/Psicometria/ProyectoFinal/TextoCodigo/barras.pdf)
+
+
+
+
+
+

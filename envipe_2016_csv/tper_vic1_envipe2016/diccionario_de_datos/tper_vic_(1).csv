@@ -1,0 +1,720 @@
+NOMBRE_CAMPO,NEMÓNICO,TIPO,LONGITUD,RANGO_CLAVES
+Identificador de vivienda seleccionada,ID_VIV,Alfanumérico,10,0100001.01 ...3299999.99
+Identificador del hogar seleccionado,ID_HOG,Alfanumérico,13,0100001.01.01 ...3299999.99.99
+Control de vivienda (UPM),UPM,Numérico,7,0100001 ...3299999
+Vivienda seleccionada,VIV_SEL,Numérico,2,01 ...99
+Control del hogar,HOGAR,Numérico,2,01 ...06
+Control del hogar,HOGAR,Numérico,2,01 ...99
+Control del hogar,HOGAR,Numérico,2,01 ...06
+Resultado de la visita al hogar,RESUL_H,Alfanumérico,1,A
+Resultado de la visita al hogar,RESUL_H,,,B
+Resultado de la visita al hogar,RESUL_H,Alfanumérico,1,A
+Resultado de la visita al hogar,RESUL_H,,,C
+Resultado de la visita al hogar,RESUL_H,Alfanumérico,1,A
+Resultado de la visita al hogar,RESUL_H,,,B
+Resultado de la visita al hogar,RESUL_H,,,C
+Resultado de la visita al hogar,RESUL_H,Alfanumérico,1,A
+Resultado de la visita al hogar,RESUL_H,,,D
+Resultado de la visita al hogar,RESUL_H,Alfanumérico,1,A
+Número de renglón de la persona seleccionada,R_SEL,Numérico,2,01 ...30
+Factor hogar,FAC_HOG,Numérico,6,"""000001  ... 999999"""
+Factor hogar del área metropolitana,FAC_HOG_AM,Numérico,6,"""000001  ... 999999"""
+Dominio u ámbito,DOMINIO,,,R
+Dominio u ámbito,DOMINIO,,,C
+Dominio u ámbito,DOMINIO,Alfanumérico,1,U
+Dominio u ámbito,DOMINIO,,,R
+Dominio u ámbito,DOMINIO,Alfanumérico,1,U
+Dominio u ámbito,DOMINIO,,,R
+Dominio u ámbito,DOMINIO,Alfanumérico,1,U
+Estrato de diseño muestral,EST_DIS,Alfanumérico,3,"""001  ... 303"""
+Unidad primaria de muestreo,UPM_DIS,Alfanumérico,5,"""00001  ... 99999"""
+Identificador del informante seleccionado,ID_PER,Alfanumérico,16,0100001.01.01.01 ...3299999.99.99.30
+Estrato sociodemográfico,ESTRATO,,,4
+Estrato sociodemográfico,ESTRATO,,,3
+Estrato sociodemográfico,ESTRATO,,,2
+Estrato sociodemográfico,ESTRATO,,,3
+Estrato sociodemográfico,ESTRATO,Numérico,1,1
+Estrato sociodemográfico,ESTRATO,,,2
+Estrato sociodemográfico,ESTRATO,,,4
+Área metropolitana,AREAM,,,19
+Área metropolitana,AREAM,,,17
+Área metropolitana,AREAM,,,18
+Área metropolitana,AREAM,,,31
+Área metropolitana,AREAM,,,21
+Área metropolitana,AREAM,,,24
+Área metropolitana,AREAM,,,25
+Área metropolitana,AREAM,,,2
+Área metropolitana,AREAM,,,3
+Área metropolitana,AREAM,,,4
+Área metropolitana,AREAM,Numérico,2,1
+Área metropolitana,AREAM,,,7
+Área metropolitana,AREAM,,,3
+Área metropolitana,AREAM,,,14
+Área metropolitana,AREAM,,,5
+Área metropolitana,AREAM,,,16
+Área metropolitana,AREAM,Numérico,2,1
+Área metropolitana,AREAM,,,2
+Área metropolitana,AREAM,,,15
+Área metropolitana,AREAM,,,4
+Área metropolitana,AREAM,Numérico,2,1
+Área metropolitana,AREAM,,,26
+Área metropolitana,AREAM,,,3
+Área metropolitana,AREAM,,,28
+Área metropolitana,AREAM,,,5
+Área metropolitana,AREAM,,,29
+Área metropolitana,AREAM,,,13
+Área metropolitana,AREAM,,,32
+Área metropolitana,AREAM,,,33
+Área metropolitana,AREAM,,,36
+Área metropolitana,AREAM,,,39
+Área metropolitana,AREAM,,,40
+Área metropolitana,AREAM,,,41
+Área metropolitana,AREAM,,,43
+Área metropolitana,AREAM,,,7
+Área metropolitana,AREAM,,,8
+Área metropolitana,AREAM,,,27
+Área metropolitana,AREAM,,,10
+Área metropolitana,AREAM,,,28
+Área metropolitana,AREAM,,,29
+Área metropolitana,AREAM,,,31
+Área metropolitana,AREAM,,,32
+Área metropolitana,AREAM,,,33
+Área metropolitana,AREAM,,,36
+Área metropolitana,AREAM,,,39
+Área metropolitana,AREAM,,,40
+Área metropolitana,AREAM,,,41
+Área metropolitana,AREAM,,,43
+Área metropolitana,AREAM,,,8
+Área metropolitana,AREAM,,,9
+Área metropolitana,AREAM,,,10
+Área metropolitana,AREAM,,,12
+Área metropolitana,AREAM,,,13
+Área metropolitana,AREAM,,,16
+Área metropolitana,AREAM,,,2
+Área metropolitana,AREAM,,,15
+Área metropolitana,AREAM,,,4
+Área metropolitana,AREAM,,,5
+Área metropolitana,AREAM,,,7
+Área metropolitana,AREAM,,,8
+Área metropolitana,AREAM,,,9
+Área metropolitana,AREAM,,,10
+Área metropolitana,AREAM,,,12
+Área metropolitana,AREAM,,,9
+Área metropolitana,AREAM,,,14
+Área metropolitana,AREAM,,,12
+Área metropolitana,AREAM,,,33
+Área metropolitana,AREAM,,,14
+Área metropolitana,AREAM,,,39
+Área metropolitana,AREAM,,,16
+Área metropolitana,AREAM,,,17
+Área metropolitana,AREAM,,,18
+Área metropolitana,AREAM,,,19
+Área metropolitana,AREAM,,,21
+Área metropolitana,AREAM,,,24
+Área metropolitana,AREAM,,,25
+Área metropolitana,AREAM,,,26
+Área metropolitana,AREAM,,,27
+Área metropolitana,AREAM,,,32
+Área metropolitana,AREAM,,,31
+Área metropolitana,AREAM,,,36
+Área metropolitana,AREAM,,,21
+Área metropolitana,AREAM,,,40
+Área metropolitana,AREAM,,,41
+Área metropolitana,AREAM,,,43
+Área metropolitana,AREAM,,,27
+Área metropolitana,AREAM,,,24
+Área metropolitana,AREAM,,,25
+Área metropolitana,AREAM,,,26
+Área metropolitana,AREAM,,,15
+Área metropolitana,AREAM,,,28
+Área metropolitana,AREAM,,,13
+Área metropolitana,AREAM,,,18
+Área metropolitana,AREAM,,,19
+Área metropolitana,AREAM,,,17
+Área metropolitana,AREAM,,,29
+Tiempo habitando en la vivienda,AP4_1,Numérico,1,1
+Tiempo habitando en la vivienda,AP4_1,,,9
+Tiempo habitando en la vivienda,AP4_1,,,2
+Tiempo habitando en la vivienda,AP4_1,,,3
+Temas que más preocupan: pobreza,AP4_2_01,Numérico,1,0
+Temas que más preocupan: pobreza,AP4_2_01,,,1
+Temas que más preocupan: desempleo,AP4_2_02,Numérico,1,0
+Temas que más preocupan: desempleo,AP4_2_02,,,1
+Temas que más preocupan: narcotráfico,AP4_2_03,,,1
+Temas que más preocupan: narcotráfico,AP4_2_03,Numérico,1,0
+Temas que más preocupan: aumento de precios,AP4_2_04,Numérico,1,0
+Temas que más preocupan: aumento de precios,AP4_2_04,,,1
+Temas que más preocupan: inseguridad,AP4_2_05,Numérico,1,0
+Temas que más preocupan: inseguridad,AP4_2_05,,,1
+Temas que más preocupan: desastres naturales,AP4_2_06,Numérico,1,0
+Temas que más preocupan: desastres naturales,AP4_2_06,,,1
+Temas que más preocupan: escasez de agua,AP4_2_07,Numérico,1,0
+Temas que más preocupan: escasez de agua,AP4_2_07,,,1
+Temas que más preocupan: corrupción,AP4_2_08,Numérico,1,0
+Temas que más preocupan: corrupción,AP4_2_08,,,1
+Temas que más preocupan: educación,AP4_2_09,,,1
+Temas que más preocupan: educación,AP4_2_09,Numérico,1,0
+Temas que más preocupan: salud,AP4_2_10,Numérico,1,0
+Temas que más preocupan: salud,AP4_2_10,,,1
+Temas que más preocupan: falta de castigo a los delincuentes,AP4_2_11,,,1
+Temas que más preocupan: falta de castigo a los delincuentes,AP4_2_11,Numérico,1,0
+Temas que más preocupan: otro,AP4_2_12,Numérico,1,0
+Temas que más preocupan: otro,AP4_2_12,,,1
+Temas que más preocupan: no especificado,AP4_2_99,,,1
+Temas que más preocupan: no especificado,AP4_2_99,Numérico,1,0
+Percepción sobre seguridad en su colonia o localidad,AP4_3_1,Numérico,1,1
+Percepción sobre seguridad en su colonia o localidad,AP4_3_1,,,2
+Percepción sobre seguridad en su colonia o localidad,AP4_3_1,,,9
+Percepción sobre seguridad en su municipio o delegación,AP4_3_2,,,9
+Percepción sobre seguridad en su municipio o delegación,AP4_3_2,,,2
+Percepción sobre seguridad en su municipio o delegación,AP4_3_2,Numérico,1,1
+Percepción sobre seguridad en su estado,AP4_3_3,Numérico,1,1
+Percepción sobre seguridad en su estado,AP4_3_3,,,2
+Percepción sobre seguridad en su estado,AP4_3_3,,,9
+Percepción sobre seguridad en su casa,AP4_4_01,Numérico,1,1
+Percepción sobre seguridad en su casa,AP4_4_01,,,2
+Percepción sobre seguridad en su casa,AP4_4_01,,,3
+Percepción sobre seguridad en su casa,AP4_4_01,,,9
+Percepción sobre seguridad en su trabajo,AP4_4_02,Numérico,1,1
+Percepción sobre seguridad en su trabajo,AP4_4_02,,,2
+Percepción sobre seguridad en su trabajo,AP4_4_02,,,9
+Percepción sobre seguridad en su trabajo,AP4_4_02,,,3
+Percepción sobre seguridad en la calle,AP4_4_03,,,3
+Percepción sobre seguridad en la calle,AP4_4_03,,,2
+Percepción sobre seguridad en la calle,AP4_4_03,,,9
+Percepción sobre seguridad en la calle,AP4_4_03,Numérico,1,1
+Percepción sobre seguridad en la escuela,AP4_4_04,,,2
+Percepción sobre seguridad en la escuela,AP4_4_04,,,3
+Percepción sobre seguridad en la escuela,AP4_4_04,,,9
+Percepción sobre seguridad en la escuela,AP4_4_04,Numérico,1,1
+Percepción sobre seguridad en el mercado,AP4_4_05,,,2
+Percepción sobre seguridad en el mercado,AP4_4_05,,,3
+Percepción sobre seguridad en el mercado,AP4_4_05,,,9
+Percepción sobre seguridad en el mercado,AP4_4_05,Numérico,1,1
+Percepción sobre seguridad en el centro comercial,AP4_4_06,,,2
+Percepción sobre seguridad en el centro comercial,AP4_4_06,,,9
+Percepción sobre seguridad en el centro comercial,AP4_4_06,,,3
+Percepción sobre seguridad en el centro comercial,AP4_4_06,Numérico,1,1
+Percepción sobre seguridad en el banco,AP4_4_07,Numérico,1,1
+Percepción sobre seguridad en el banco,AP4_4_07,,,3
+Percepción sobre seguridad en el banco,AP4_4_07,,,9
+Percepción sobre seguridad en el banco,AP4_4_07,,,2
+Percepción sobre seguridad en el cajero automático localizado en la vía pública,AP4_4_08,Numérico,1,1
+Percepción sobre seguridad en el cajero automático localizado en la vía pública,AP4_4_08,,,3
+Percepción sobre seguridad en el cajero automático localizado en la vía pública,AP4_4_08,,,9
+Percepción sobre seguridad en el cajero automático localizado en la vía pública,AP4_4_08,,,2
+Percepción sobre seguridad en el transporte público,AP4_4_09,,,9
+Percepción sobre seguridad en el transporte público,AP4_4_09,,,2
+Percepción sobre seguridad en el transporte público,AP4_4_09,Numérico,1,1
+Percepción sobre seguridad en el transporte público,AP4_4_09,,,3
+Percepción sobre seguridad en el automóvil ,AP4_4_10,Numérico,1,1
+Percepción sobre seguridad en el automóvil ,AP4_4_10,,,2
+Percepción sobre seguridad en el automóvil ,AP4_4_10,,,3
+Percepción sobre seguridad en el automóvil ,AP4_4_10,,,9
+Percepción sobre seguridad en la carretera,AP4_4_11,Numérico,1,1
+Percepción sobre seguridad en la carretera,AP4_4_11,,,2
+Percepción sobre seguridad en la carretera,AP4_4_11,,,3
+Percepción sobre seguridad en la carretera,AP4_4_11,,,9
+Percepción sobre seguridad en el parque o centro recreativo ,AP4_4_12,Numérico,1,1
+Percepción sobre seguridad en el parque o centro recreativo ,AP4_4_12,,,2
+Percepción sobre seguridad en el parque o centro recreativo ,AP4_4_12,,,9
+Percepción sobre seguridad en el parque o centro recreativo ,AP4_4_12,,,3
+Incivilidades en su colonia: consumo de alcohol en la calle,AP4_5_01,,,1
+Incivilidades en su colonia: consumo de alcohol en la calle,AP4_5_01,Numérico,1,0
+Incivilidades en su colonia: pandillerismo o bandas violentas,AP4_5_02,,,1
+Incivilidades en su colonia: pandillerismo o bandas violentas,AP4_5_02,Numérico,1,0
+Incivilidades en su colonia: riñas entre vecinos,AP4_5_03,,,1
+Incivilidades en su colonia: riñas entre vecinos,AP4_5_03,Numérico,1,0
+Incivilidades en su colonia: venta ilegal de alcohol,AP4_5_04,Numérico,1,0
+Incivilidades en su colonia: venta ilegal de alcohol,AP4_5_04,,,1
+Incivilidades en su colonia: venta de productos pirata,AP4_5_05,,,1
+Incivilidades en su colonia: venta de productos pirata,AP4_5_05,Numérico,1,0
+Incivilidades en su colonia: violencia policiaca contra ciudadanos,AP4_5_06,Numérico,1,0
+Incivilidades en su colonia: violencia policiaca contra ciudadanos,AP4_5_06,,,1
+Incivilidades en su colonia: invasión de predios,AP4_5_07,,,1
+Incivilidades en su colonia: invasión de predios,AP4_5_07,Numérico,1,0
+Incivilidades en su colonia: consumo de droga,AP4_5_08,Numérico,1,0
+Incivilidades en su colonia: consumo de droga,AP4_5_08,,,1
+Incivilidades en su colonia: robos o asaltos frecuentes,AP4_5_09,Numérico,1,0
+Incivilidades en su colonia: robos o asaltos frecuentes,AP4_5_09,,,1
+Incivilidades en su colonia: venta de droga,AP4_5_10,Numérico,1,0
+Incivilidades en su colonia: venta de droga,AP4_5_10,,,1
+Incivilidades en su colonia: disparos frecuentes,AP4_5_11,Numérico,1,0
+Incivilidades en su colonia: disparos frecuentes,AP4_5_11,,,1
+Incivilidades en su colonia: prostitución,AP4_5_12,Numérico,1,0
+Incivilidades en su colonia: prostitución,AP4_5_12,,,1
+Incivilidades en su colonia: secuestros,AP4_5_13,Numérico,1,0
+Incivilidades en su colonia: secuestros,AP4_5_13,,,1
+Incivilidades en su colonia: homicidios,AP4_5_14,,,1
+Incivilidades en su colonia: homicidios,AP4_5_14,Numérico,1,0
+Incivilidades en su colonia: extorsiones (cobro de piso),AP4_5_15,,,1
+Incivilidades en su colonia: extorsiones (cobro de piso),AP4_5_15,Numérico,1,0
+Incivilidades en su colonia: ninguna,AP4_5_16,Numérico,1,0
+Incivilidades en su colonia: ninguna,AP4_5_16,,,1
+Incivilidades en su colonia: no especificado,AP4_5_99,,,1
+Incivilidades en su colonia: no especificado,AP4_5_99,Numérico,1,0
+Sensación de ser víctima de robo o asalto en la calle o transporte público,AP4_6_1,Numérico,1,1
+Sensación de ser víctima de robo o asalto en la calle o transporte público,AP4_6_1,,,2
+Sensación de ser víctima de robo o asalto en la calle o transporte público,AP4_6_1,,,9
+Sensación de ser víctima de robo o asalto en la calle o transporte público,AP4_6_1,,,3
+Sensación de ser víctima de lesiones por agresión física,AP4_6_2,Numérico,1,1
+Sensación de ser víctima de lesiones por agresión física,AP4_6_2,,,2
+Sensación de ser víctima de lesiones por agresión física,AP4_6_2,,,9
+Sensación de ser víctima de lesiones por agresión física,AP4_6_2,,,3
+Sensación de ser víctima de extorsión o secuestro,AP4_6_3,Numérico,1,1
+Sensación de ser víctima de extorsión o secuestro,AP4_6_3,,,9
+Sensación de ser víctima de extorsión o secuestro,AP4_6_3,,,3
+Sensación de ser víctima de extorsión o secuestro,AP4_6_3,,,2
+Percepción sobre tendencia de seguridad pública en su colonia o localidad,AP4_7_1,Numérico,1,1
+Percepción sobre tendencia de seguridad pública en su colonia o localidad,AP4_7_1,,,2
+Percepción sobre tendencia de seguridad pública en su colonia o localidad,AP4_7_1,,,9
+Percepción sobre tendencia de seguridad pública en su colonia o localidad,AP4_7_1,,,3
+Percepción sobre tendencia de seguridad pública en su colonia o localidad,AP4_7_1,,,4
+Percepción sobre tendencia de seguridad pública en su estado,AP4_7_2,Numérico,1,1
+Percepción sobre tendencia de seguridad pública en su estado,AP4_7_2,,,9
+Percepción sobre tendencia de seguridad pública en su estado,AP4_7_2,,,3
+Percepción sobre tendencia de seguridad pública en su estado,AP4_7_2,,,2
+Percepción sobre tendencia de seguridad pública en su estado,AP4_7_2,,,4
+Percepción sobre tendencia de seguridad pública en su país,AP4_7_3,,,2
+Percepción sobre tendencia de seguridad pública en su país,AP4_7_3,Numérico,1,1
+Percepción sobre tendencia de seguridad pública en su país,AP4_7_3,,,4
+Percepción sobre tendencia de seguridad pública en su país,AP4_7_3,,,9
+Percepción sobre tendencia de seguridad pública en su país,AP4_7_3,,,3
+Problemas en su colonia: falta de alumbrado,AP4_8_1,Numérico,1,1
+Problemas en su colonia: falta de alumbrado,AP4_8_1,,,3
+Problemas en su colonia: falta de alumbrado,AP4_8_1,,,9
+Problemas en su colonia: falta de alumbrado,AP4_8_1,,,2
+Capacidad de organización para resolver falta de alumbrado,AP4_9_1,Numérico,1,1
+Capacidad de organización para resolver falta de alumbrado,AP4_9_1,,,9
+Capacidad de organización para resolver falta de alumbrado,AP4_9_1,,,b
+Capacidad de organización para resolver falta de alumbrado,AP4_9_1,,,2
+Problemas en su colonia: falta de agua,AP4_8_2,,,2
+Problemas en su colonia: falta de agua,AP4_8_2,,,3
+Problemas en su colonia: falta de agua,AP4_8_2,Numérico,1,1
+Problemas en su colonia: falta de agua,AP4_8_2,,,9
+Capacidad de organización para resolver falta de agua,AP4_9_2,Numérico,1,1
+Capacidad de organización para resolver falta de agua,AP4_9_2,,,2
+Capacidad de organización para resolver falta de agua,AP4_9_2,,,9
+Capacidad de organización para resolver falta de agua,AP4_9_2,,,b
+Problemas en su colonia: baches o fugas de agua,AP4_8_3,Numérico,1,1
+Problemas en su colonia: baches o fugas de agua,AP4_8_3,,,2
+Problemas en su colonia: baches o fugas de agua,AP4_8_3,,,3
+Problemas en su colonia: baches o fugas de agua,AP4_8_3,,,9
+Capacidad de organización para resolver baches o fugas de agua,AP4_9_3,,,2
+Capacidad de organización para resolver baches o fugas de agua,AP4_9_3,,,b
+Capacidad de organización para resolver baches o fugas de agua,AP4_9_3,,,9
+Capacidad de organización para resolver baches o fugas de agua,AP4_9_3,Numérico,1,1
+Problemas en su colonia: pandillerismo violento,AP4_8_4,,,2
+Problemas en su colonia: pandillerismo violento,AP4_8_4,,,3
+Problemas en su colonia: pandillerismo violento,AP4_8_4,Numérico,1,1
+Problemas en su colonia: pandillerismo violento,AP4_8_4,,,9
+Capacidad de organización para resolver pandillerismo violento ,AP4_9_4,,,2
+Capacidad de organización para resolver pandillerismo violento ,AP4_9_4,,,9
+Capacidad de organización para resolver pandillerismo violento ,AP4_9_4,Numérico,1,1
+Capacidad de organización para resolver pandillerismo violento ,AP4_9_4,,,b
+Problemas en su colonia: robos,AP4_8_5,,,9
+Problemas en su colonia: robos,AP4_8_5,,,3
+Problemas en su colonia: robos,AP4_8_5,,,2
+Problemas en su colonia: robos,AP4_8_5,Numérico,1,1
+Capacidad de organización para resolver robos,AP4_9_5,Numérico,1,1
+Capacidad de organización para resolver robos,AP4_9_5,,,9
+Capacidad de organización para resolver robos,AP4_9_5,,,b
+Capacidad de organización para resolver robos,AP4_9_5,,,2
+Problemas en su colonia: delincuencia en alrededores de escuelas,AP4_8_6,Numérico,1,1
+Problemas en su colonia: delincuencia en alrededores de escuelas,AP4_8_6,,,3
+Problemas en su colonia: delincuencia en alrededores de escuelas,AP4_8_6,,,9
+Problemas en su colonia: delincuencia en alrededores de escuelas,AP4_8_6,,,2
+Capacidad de organización para resolver delincuencia en alrededores de escuelas,AP4_9_6,Numérico,1,1
+Capacidad de organización para resolver delincuencia en alrededores de escuelas,AP4_9_6,,,9
+Capacidad de organización para resolver delincuencia en alrededores de escuelas,AP4_9_6,,,b
+Capacidad de organización para resolver delincuencia en alrededores de escuelas,AP4_9_6,,,2
+Dejar de salir de noche por temor a ser víctima,AP4_10_01,,,2
+Dejar de salir de noche por temor a ser víctima,AP4_10_01,,,3
+Dejar de salir de noche por temor a ser víctima,AP4_10_01,Numérico,1,1
+Dejar de salir de noche por temor a ser víctima,AP4_10_01,,,9
+Dejar de permitir a menores salir solos por temor a ser víctima,AP4_10_02,Numérico,1,1
+Dejar de permitir a menores salir solos por temor a ser víctima,AP4_10_02,,,2
+Dejar de permitir a menores salir solos por temor a ser víctima,AP4_10_02,,,3
+Dejar de permitir a menores salir solos por temor a ser víctima,AP4_10_02,,,9
+Dejar de visitar parientes o amigos por temor a ser víctima,AP4_10_03,Numérico,1,1
+Dejar de visitar parientes o amigos por temor a ser víctima,AP4_10_03,,,2
+Dejar de visitar parientes o amigos por temor a ser víctima,AP4_10_03,,,3
+Dejar de visitar parientes o amigos por temor a ser víctima,AP4_10_03,,,9
+Dejar de tomar taxi por temor a ser víctima,AP4_10_04,,,3
+Dejar de tomar taxi por temor a ser víctima,AP4_10_04,,,9
+Dejar de tomar taxi por temor a ser víctima,AP4_10_04,,,2
+Dejar de tomar taxi por temor a ser víctima,AP4_10_04,Numérico,1,1
+Dejar de usar transporte público por temor a ser víctima,AP4_10_05,,,2
+Dejar de usar transporte público por temor a ser víctima,AP4_10_05,,,3
+Dejar de usar transporte público por temor a ser víctima,AP4_10_05,,,9
+Dejar de usar transporte público por temor a ser víctima,AP4_10_05,Numérico,1,1
+Dejar de llevar dinero en efectivo por temor a ser víctima,AP4_10_06,,,2
+Dejar de llevar dinero en efectivo por temor a ser víctima,AP4_10_06,,,3
+Dejar de llevar dinero en efectivo por temor a ser víctima,AP4_10_06,,,9
+Dejar de llevar dinero en efectivo por temor a ser víctima,AP4_10_06,Numérico,1,1
+Dejar de ir a la escuela por temor a ser víctima,AP4_10_07,,,2
+Dejar de ir a la escuela por temor a ser víctima,AP4_10_07,,,9
+Dejar de ir a la escuela por temor a ser víctima,AP4_10_07,Numérico,1,1
+Dejar de ir a la escuela por temor a ser víctima,AP4_10_07,,,3
+Dejar de ir al cine o teatro por temor a ser víctima,AP4_10_08,,,9
+Dejar de ir al cine o teatro por temor a ser víctima,AP4_10_08,Numérico,1,1
+Dejar de ir al cine o teatro por temor a ser víctima,AP4_10_08,,,2
+Dejar de ir al cine o teatro por temor a ser víctima,AP4_10_08,,,3
+Dejar de salir a caminar por temor a ser víctima,AP4_10_09,,,9
+Dejar de salir a caminar por temor a ser víctima,AP4_10_09,Numérico,1,1
+Dejar de salir a caminar por temor a ser víctima,AP4_10_09,,,2
+Dejar de salir a caminar por temor a ser víctima,AP4_10_09,,,3
+Dejar de usar joyas por temor a ser víctima,AP4_10_10,,,9
+Dejar de usar joyas por temor a ser víctima,AP4_10_10,Numérico,1,1
+Dejar de usar joyas por temor a ser víctima,AP4_10_10,,,3
+Dejar de usar joyas por temor a ser víctima,AP4_10_10,,,2
+Dejar de salir a comer o cenar por temor a ser víctima,AP4_10_11,,,3
+Dejar de salir a comer o cenar por temor a ser víctima,AP4_10_11,,,2
+Dejar de salir a comer o cenar por temor a ser víctima,AP4_10_11,Numérico,1,1
+Dejar de salir a comer o cenar por temor a ser víctima,AP4_10_11,,,9
+Dejar de llevar tarjeta de crédito o débito por temor a ser víctima,AP4_10_12,,,3
+Dejar de llevar tarjeta de crédito o débito por temor a ser víctima,AP4_10_12,,,9
+Dejar de llevar tarjeta de crédito o débito por temor a ser víctima,AP4_10_12,Numérico,1,1
+Dejar de llevar tarjeta de crédito o débito por temor a ser víctima,AP4_10_12,,,2
+Dejar de ir al estadio por temor a ser víctima,AP4_10_13,,,3
+Dejar de ir al estadio por temor a ser víctima,AP4_10_13,,,9
+Dejar de ir al estadio por temor a ser víctima,AP4_10_13,Numérico,1,1
+Dejar de ir al estadio por temor a ser víctima,AP4_10_13,,,2
+Dejar de frecuentar centros comerciales por temor a ser víctima,AP4_10_14,,,3
+Dejar de frecuentar centros comerciales por temor a ser víctima,AP4_10_14,Numérico,1,1
+Dejar de frecuentar centros comerciales por temor a ser víctima,AP4_10_14,,,9
+Dejar de frecuentar centros comerciales por temor a ser víctima,AP4_10_14,,,2
+Dejar de viajar por carretera por temor a ser víctima,AP4_10_15,Numérico,1,1
+Dejar de viajar por carretera por temor a ser víctima,AP4_10_15,,,9
+Dejar de viajar por carretera por temor a ser víctima,AP4_10_15,,,2
+Dejar de viajar por carretera por temor a ser víctima,AP4_10_15,,,3
+Medidas de protección contra delincuencia: cambiar puertas o ventanas,AP4_11_01,Numérico,1,1
+Medidas de protección contra delincuencia: cambiar puertas o ventanas,AP4_11_01,,,2
+Medidas de protección contra delincuencia: cambiar puertas o ventanas,AP4_11_01,,,9
+Medidas de protección contra delincuencia: cambiar o colocar cerraduras y/o candados,AP4_11_02,Numérico,1,1
+Medidas de protección contra delincuencia: cambiar o colocar cerraduras y/o candados,AP4_11_02,,,2
+Medidas de protección contra delincuencia: cambiar o colocar cerraduras y/o candados,AP4_11_02,,,9
+Medidas de protección contra delincuencia: colocar o reforzar rejas o bardas,AP4_11_03,,,2
+Medidas de protección contra delincuencia: colocar o reforzar rejas o bardas,AP4_11_03,,,9
+Medidas de protección contra delincuencia: colocar o reforzar rejas o bardas,AP4_11_03,Numérico,1,1
+Medidas de protección contra delincuencia: instalar alarmas y/o videocámaras de vigilancia,AP4_11_04,Numérico,1,1
+Medidas de protección contra delincuencia: instalar alarmas y/o videocámaras de vigilancia,AP4_11_04,,,2
+Medidas de protección contra delincuencia: instalar alarmas y/o videocámaras de vigilancia,AP4_11_04,,,9
+Medidas de protección contra delincuencia: contratar vigilancia privada en la calle o colonia,AP4_11_05,Numérico,1,1
+Medidas de protección contra delincuencia: contratar vigilancia privada en la calle o colonia,AP4_11_05,,,2
+Medidas de protección contra delincuencia: contratar vigilancia privada en la calle o colonia,AP4_11_05,,,9
+Medidas de protección contra delincuencia: realizar acciones conjuntas con sus vecinos,AP4_11_06,,,2
+Medidas de protección contra delincuencia: realizar acciones conjuntas con sus vecinos,AP4_11_06,,,9
+Medidas de protección contra delincuencia: realizar acciones conjuntas con sus vecinos,AP4_11_06,Numérico,1,1
+Medidas de protección contra delincuencia: contratar seguros,AP4_11_07,,,9
+Medidas de protección contra delincuencia: contratar seguros,AP4_11_07,,,2
+Medidas de protección contra delincuencia: contratar seguros,AP4_11_07,Numérico,1,1
+Medidas de protección contra delincuencia: comprar un perro guardián,AP4_11_08,,,2
+Medidas de protección contra delincuencia: comprar un perro guardián,AP4_11_08,Numérico,1,1
+Medidas de protección contra delincuencia: comprar un perro guardián,AP4_11_08,,,9
+Medidas de protección contra delincuencia: adquirir armas de fuego,AP4_11_09,,,9
+Medidas de protección contra delincuencia: adquirir armas de fuego,AP4_11_09,Numérico,1,1
+Medidas de protección contra delincuencia: adquirir armas de fuego,AP4_11_09,,,2
+Medidas de protección contra delincuencia: cambiarse de vivienda o lugar de residencia,AP4_11_10,Numérico,1,1
+Medidas de protección contra delincuencia: cambiarse de vivienda o lugar de residencia,AP4_11_10,,,2
+Medidas de protección contra delincuencia: cambiarse de vivienda o lugar de residencia,AP4_11_10,,,9
+Medidas de protección contra delincuencia: Otra medida,AP4_11_11,Numérico,1,1
+Medidas de protección contra delincuencia: Otra medida,AP4_11_11,,,2
+Medidas de protección contra delincuencia: Otra medida,AP4_11_11,,,9
+Gastos protección contra delincuencia,AP4_12,,,b
+Gastos protección contra delincuencia,AP4_12,,,"9,999,999"
+Gastos protección contra delincuencia,AP4_12,,,"0,000,001 ...9,999,998"
+Gastos protección contra delincuencia,AP4_12,Numérico,7,"0,000,000"
+Acciones en municipio/localidad: construcción/mantenimiento parques y canchas deportivas,AP5_1_01,Numérico,1,1
+Acciones en municipio/localidad: construcción/mantenimiento parques y canchas deportivas,AP5_1_01,,,3
+Acciones en municipio/localidad: construcción/mantenimiento parques y canchas deportivas,AP5_1_01,,,9
+Acciones en municipio/localidad: construcción/mantenimiento parques y canchas deportivas,AP5_1_01,,,2
+Acciones en municipio/localidad: mejorar el alumbrado,AP5_1_02,Numérico,1,1
+Acciones en municipio/localidad: mejorar el alumbrado,AP5_1_02,,,3
+Acciones en municipio/localidad: mejorar el alumbrado,AP5_1_02,,,9
+Acciones en municipio/localidad: mejorar el alumbrado,AP5_1_02,,,2
+Acciones en municipio/localidad: mejora de ingreso,AP5_1_03,Numérico,1,1
+Acciones en municipio/localidad: mejora de ingreso,AP5_1_03,,,3
+Acciones en municipio/localidad: mejora de ingreso,AP5_1_03,,,9
+Acciones en municipio/localidad: mejora de ingreso,AP5_1_03,,,2
+Acciones en municipio/localidad: atender desempleo,AP5_1_04,Numérico,1,1
+Acciones en municipio/localidad: atender desempleo,AP5_1_04,,,2
+Acciones en municipio/localidad: atender desempleo,AP5_1_04,,,9
+Acciones en municipio/localidad: atender desempleo,AP5_1_04,,,3
+Acciones en municipio/localidad: atención a jóvenes para reducir delincuencia,AP5_1_05,Numérico,1,1
+Acciones en municipio/localidad: atención a jóvenes para reducir delincuencia,AP5_1_05,,,2
+Acciones en municipio/localidad: atención a jóvenes para reducir delincuencia,AP5_1_05,,,9
+Acciones en municipio/localidad: atención a jóvenes para reducir delincuencia,AP5_1_05,,,3
+Acciones en municipio/localidad: organización vecinos para contratar seguridad privada,AP5_1_06,Numérico,1,1
+Acciones en municipio/localidad: organización vecinos para contratar seguridad privada,AP5_1_06,,,9
+Acciones en municipio/localidad: organización vecinos para contratar seguridad privada,AP5_1_06,,,3
+Acciones en municipio/localidad: organización vecinos para contratar seguridad privada,AP5_1_06,,,2
+Acciones en municipio/localidad: policía de barrio,AP5_1_07,,,2
+Acciones en municipio/localidad: policía de barrio,AP5_1_07,Numérico,1,1
+Acciones en municipio/localidad: policía de barrio,AP5_1_07,,,3
+Acciones en municipio/localidad: policía de barrio,AP5_1_07,,,9
+Acciones en municipio/localidad: policía de barrio,AP5_1_07,,,b
+Acciones en municipio/localidad: operativos contra la delincuencia,AP5_1_08,Numérico,1,1
+Acciones en municipio/localidad: operativos contra la delincuencia,AP5_1_08,,,2
+Acciones en municipio/localidad: operativos contra la delincuencia,AP5_1_08,,,3
+Acciones en municipio/localidad: operativos contra la delincuencia,AP5_1_08,,,9
+Acciones en municipio/localidad: programas de sensibilización a denunciar,AP5_1_09,Numérico,1,1
+Acciones en municipio/localidad: programas de sensibilización a denunciar,AP5_1_09,,,2
+Acciones en municipio/localidad: programas de sensibilización a denunciar,AP5_1_09,,,9
+Acciones en municipio/localidad: programas de sensibilización a denunciar,AP5_1_09,,,3
+Acciones en municipio/localidad: programas de sensibilización a denunciar,AP5_1_09,,,b
+Acciones en municipio/localidad: mayor patrullaje,AP5_1_10,Numérico,1,1
+Acciones en municipio/localidad: mayor patrullaje,AP5_1_10,,,9
+Acciones en municipio/localidad: mayor patrullaje,AP5_1_10,,,3
+Acciones en municipio/localidad: mayor patrullaje,AP5_1_10,,,2
+Acciones en municipio/localidad: combatir corrupción,AP5_1_11,Numérico,1,1
+Acciones en municipio/localidad: combatir corrupción,AP5_1_11,,,2
+Acciones en municipio/localidad: combatir corrupción,AP5_1_11,,,3
+Acciones en municipio/localidad: combatir corrupción,AP5_1_11,,,9
+Acciones en municipio/localidad: combatir narcotráfico,AP5_1_12,Numérico,1,1
+Acciones en municipio/localidad: combatir narcotráfico,AP5_1_12,,,2
+Acciones en municipio/localidad: combatir narcotráfico,AP5_1_12,,,9
+Acciones en municipio/localidad: combatir narcotráfico,AP5_1_12,,,3
+Acciones en municipio/localidad: otra,AP5_1_13,Numérico,1,1
+Acciones en municipio/localidad: otra,AP5_1_13,,,2
+Acciones en municipio/localidad: otra,AP5_1_13,,,9
+Confianza en vecinos,AP5_2_1,Numérico,1,1
+Confianza en vecinos,AP5_2_1,,,2
+Confianza en vecinos,AP5_2_1,,,3
+Confianza en vecinos,AP5_2_1,,,4
+Confianza en vecinos,AP5_2_1,,,5
+Confianza en vecinos,AP5_2_1,,,9
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,Numérico,1,1
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,,,2
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,,,5
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,,,9
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,,,4
+"Confianza en compañeros de trabajo/negocio, escuela",AP5_2_2,,,3
+Confianza en familiares o parientes,AP5_2_3,,,2
+Confianza en familiares o parientes,AP5_2_3,Numérico,1,1
+Confianza en familiares o parientes,AP5_2_3,,,3
+Confianza en familiares o parientes,AP5_2_3,,,9
+Confianza en familiares o parientes,AP5_2_3,,,4
+Confianza en familiares o parientes,AP5_2_3,,,5
+Confianza en amigos,AP5_2_4,Numérico,1,1
+Confianza en amigos,AP5_2_4,,,4
+Confianza en amigos,AP5_2_4,,,5
+Confianza en amigos,AP5_2_4,,,2
+Confianza en amigos,AP5_2_4,,,3
+Confianza en amigos,AP5_2_4,,,9
+Identificación de Policía de Tránsito Municipal,AP5_3_01,,,9
+Identificación de Policía de Tránsito Municipal,AP5_3_01,,,3
+Identificación de Policía de Tránsito Municipal,AP5_3_01,,,2
+Identificación de Policía de Tránsito Municipal,AP5_3_01,Numérico,1,1
+Confianza en Policía de Tránsito Municipal,AP5_4_01,Numérico,1,1
+Confianza en Policía de Tránsito Municipal,AP5_4_01,,,3
+Confianza en Policía de Tránsito Municipal,AP5_4_01,,,4
+Confianza en Policía de Tránsito Municipal,AP5_4_01,,,9
+Confianza en Policía de Tránsito Municipal,AP5_4_01,,,2
+Confianza en Policía de Tránsito Municipal,AP5_4_01,,,b
+Percepción sobre corrupción de Policía de Tránsito Municipal,AP5_5_01,Numérico,1,1
+Percepción sobre corrupción de Policía de Tránsito Municipal,AP5_5_01,,,2
+Percepción sobre corrupción de Policía de Tránsito Municipal,AP5_5_01,,,9
+Percepción sobre corrupción de Policía de Tránsito Municipal,AP5_5_01,,,b
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,,,3
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,,,2
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,,,4
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,,,9
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,,,b
+Percepción sobre desempeño de Policía de Tránsito Municipal,AP5_6_01,Numérico,1,1
+Disposición de Policía de Tránsito Municipal,AP5_7_1,Numérico,1,1
+Disposición de Policía de Tránsito Municipal,AP5_7_1,,,2
+Disposición de Policía de Tránsito Municipal,AP5_7_1,,,b
+Disposición de Policía de Tránsito Municipal,AP5_7_1,,,9
+Identificación de Policía Preventiva Municipal,AP5_3_02,Numérico,1,1
+Identificación de Policía Preventiva Municipal,AP5_3_02,,,9
+Identificación de Policía Preventiva Municipal,AP5_3_02,,,3
+Identificación de Policía Preventiva Municipal,AP5_3_02,,,2
+Confianza en Policía Preventiva Municipal,AP5_4_02,,,2
+Confianza en Policía Preventiva Municipal,AP5_4_02,Numérico,1,1
+Confianza en Policía Preventiva Municipal,AP5_4_02,,,3
+Confianza en Policía Preventiva Municipal,AP5_4_02,,,b
+Confianza en Policía Preventiva Municipal,AP5_4_02,,,4
+Confianza en Policía Preventiva Municipal,AP5_4_02,,,9
+Percepción sobre corrupción de Policía Preventiva Municipal,AP5_5_02,Numérico,1,1
+Percepción sobre corrupción de Policía Preventiva Municipal,AP5_5_02,,,b
+Percepción sobre corrupción de Policía Preventiva Municipal,AP5_5_02,,,2
+Percepción sobre corrupción de Policía Preventiva Municipal,AP5_5_02,,,9
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,Numérico,1,1
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,,,b
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,,,2
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,,,9
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,,,4
+Percepción sobre desempeño de Policía Preventiva Municipal,AP5_6_02,,,3
+Disposición de Policía Preventiva Municipal,AP5_7_2,Numérico,1,1
+Disposición de Policía Preventiva Municipal,AP5_7_2,,,9
+Disposición de Policía Preventiva Municipal,AP5_7_2,,,b
+Disposición de Policía Preventiva Municipal,AP5_7_2,,,2
+Identificación de Policía Estatal,AP5_3_03,Numérico,1,1
+Identificación de Policía Estatal,AP5_3_03,,,9
+Identificación de Policía Estatal,AP5_3_03,,,2
+Confianza en Policía Estatal,AP5_4_03,,,b
+Confianza en Policía Estatal,AP5_4_03,,,2
+Confianza en Policía Estatal,AP5_4_03,,,4
+Confianza en Policía Estatal,AP5_4_03,Numérico,1,1
+Confianza en Policía Estatal,AP5_4_03,,,9
+Confianza en Policía Estatal,AP5_4_03,,,3
+Percepción sobre corrupción de Policía Estatal,AP5_5_03,Numérico,1,1
+Percepción sobre corrupción de Policía Estatal,AP5_5_03,,,9
+Percepción sobre corrupción de Policía Estatal,AP5_5_03,,,b
+Percepción sobre corrupción de Policía Estatal,AP5_5_03,,,2
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,Numérico,1,1
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,,,3
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,,,4
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,,,9
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,,,2
+Percepción sobre desempeño de Policía Estatal,AP5_6_03,,,b
+Disposición de Policía Estatal,AP5_7_3,,,9
+Disposición de Policía Estatal,AP5_7_3,,,2
+Disposición de Policía Estatal,AP5_7_3,Numérico,1,1
+Disposición de Policía Estatal,AP5_7_3,,,b
+Identificación de Policía Federal,AP5_3_04,,,9
+Identificación de Policía Federal,AP5_3_04,Numérico,1,1
+Identificación de Policía Federal,AP5_3_04,,,2
+Confianza en Policía Federal,AP5_4_04,Numérico,1,1
+Confianza en Policía Federal,AP5_4_04,,,4
+Confianza en Policía Federal,AP5_4_04,,,9
+Confianza en Policía Federal,AP5_4_04,,,2
+Confianza en Policía Federal,AP5_4_04,,,3
+Confianza en Policía Federal,AP5_4_04,,,b
+Percepción sobre corrupción de Policía Federal,AP5_5_04,,,2
+Percepción sobre corrupción de Policía Federal,AP5_5_04,,,9
+Percepción sobre corrupción de Policía Federal,AP5_5_04,,,b
+Percepción sobre corrupción de Policía Federal,AP5_5_04,Numérico,1,1
+Percepción cobre desempeño de Policía Federal,AP5_6_04,Numérico,1,1
+Percepción cobre desempeño de Policía Federal,AP5_6_04,,,4
+Percepción cobre desempeño de Policía Federal,AP5_6_04,,,9
+Percepción cobre desempeño de Policía Federal,AP5_6_04,,,3
+Percepción cobre desempeño de Policía Federal,AP5_6_04,,,2
+Percepción cobre desempeño de Policía Federal,AP5_6_04,,,b
+Disposición de Policía Federal,AP5_7_4,Numérico,1,1
+Disposición de Policía Federal,AP5_7_4,,,2
+Disposición de Policía Federal,AP5_7_4,,,9
+Disposición de Policía Federal,AP5_7_4,,,b
+Identificación de Policía Ministerial o Judicial,AP5_3_05,,,9
+Identificación de Policía Ministerial o Judicial,AP5_3_05,,,2
+Identificación de Policía Ministerial o Judicial,AP5_3_05,Numérico,1,1
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,Numérico,1,1
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,,,2
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,,,3
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,,,4
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,,,9
+Confianza en Policía Ministerial o Judicial ,AP5_4_05,,,b
+Percepción sobre corrupción de Policía Ministerial o Judicial ,AP5_5_05,Numérico,1,1
+Percepción sobre corrupción de Policía Ministerial o Judicial ,AP5_5_05,,,2
+Percepción sobre corrupción de Policía Ministerial o Judicial ,AP5_5_05,,,9
+Percepción sobre corrupción de Policía Ministerial o Judicial ,AP5_5_05,,,b
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,,,4
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,,,9
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,,,b
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,,,3
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,Numérico,1,1
+Percepción sobre desempeño de Policía Ministerial o Judicial ,AP5_6_05,,,2
+"Identificación del MP, Procuradurías",AP5_3_06,,,2
+"Identificación del MP, Procuradurías",AP5_3_06,,,9
+"Identificación del MP, Procuradurías",AP5_3_06,Numérico,1,1
+"Confianza en MP, Procuradurías",AP5_4_06,Numérico,1,1
+"Confianza en MP, Procuradurías",AP5_4_06,,,3
+"Confianza en MP, Procuradurías",AP5_4_06,,,4
+"Confianza en MP, Procuradurías",AP5_4_06,,,9
+"Confianza en MP, Procuradurías",AP5_4_06,,,b
+"Confianza en MP, Procuradurías",AP5_4_06,,,2
+Percepción sobre corrupción de MP o Procuradurías,AP5_5_06,,,2
+Percepción sobre corrupción de MP o Procuradurías,AP5_5_06,,,b
+Percepción sobre corrupción de MP o Procuradurías,AP5_5_06,,,9
+Percepción sobre corrupción de MP o Procuradurías,AP5_5_06,Numérico,1,1
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,,,2
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,,,3
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,Numérico,1,1
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,,,b
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,,,4
+Percepción sobre desempeño de MP o Procuradurías,AP5_6_06,,,9
+Identificación de la PGR,AP5_3_07,Numérico,1,1
+Identificación de la PGR,AP5_3_07,,,9
+Identificación de la PGR,AP5_3_07,,,2
+Confianza en PGR,AP5_4_07,,,2
+Confianza en PGR,AP5_4_07,,,4
+Confianza en PGR,AP5_4_07,,,3
+Confianza en PGR,AP5_4_07,,,9
+Confianza en PGR,AP5_4_07,,,b
+Confianza en PGR,AP5_4_07,Numérico,1,1
+Percepción sobre corrupción de PGR,AP5_5_07,Numérico,1,1
+Percepción sobre corrupción de PGR,AP5_5_07,,,2
+Percepción sobre corrupción de PGR,AP5_5_07,,,b
+Percepción sobre corrupción de PGR,AP5_5_07,,,9
+Percepción sobre desempeño de PGR,AP5_6_07,Numérico,1,1
+Percepción sobre desempeño de PGR,AP5_6_07,,,2
+Percepción sobre desempeño de PGR,AP5_6_07,,,b
+Percepción sobre desempeño de PGR,AP5_6_07,,,9
+Percepción sobre desempeño de PGR,AP5_6_07,,,4
+Percepción sobre desempeño de PGR,AP5_6_07,,,3
+Identificación del Ejército,AP5_3_08,Numérico,1,1
+Identificación del Ejército,AP5_3_08,,,2
+Identificación del Ejército,AP5_3_08,,,9
+Confianza en Ejército,AP5_4_08,Numérico,1,1
+Confianza en Ejército,AP5_4_08,,,2
+Confianza en Ejército,AP5_4_08,,,3
+Confianza en Ejército,AP5_4_08,,,9
+Confianza en Ejército,AP5_4_08,,,b
+Confianza en Ejército,AP5_4_08,,,4
+Percepción sobre corrupción del Ejército,AP5_5_08,Numérico,1,1
+Percepción sobre corrupción del Ejército,AP5_5_08,,,b
+Percepción sobre corrupción del Ejército,AP5_5_08,,,9
+Percepción sobre corrupción del Ejército,AP5_5_08,,,2
+Percepción sobre desempeño del Ejército,AP5_6_08,Numérico,1,1
+Percepción sobre desempeño del Ejército,AP5_6_08,,,3
+Percepción sobre desempeño del Ejército,AP5_6_08,,,4
+Percepción sobre desempeño del Ejército,AP5_6_08,,,9
+Percepción sobre desempeño del Ejército,AP5_6_08,,,2
+Percepción sobre desempeño del Ejército,AP5_6_08,,,b
+Identificación de la Marina,AP5_3_09,,,2
+Identificación de la Marina,AP5_3_09,,,9
+Identificación de la Marina,AP5_3_09,Numérico,1,1
+Confianza en Marina,AP5_4_09,,,9
+Confianza en Marina,AP5_4_09,,,4
+Confianza en Marina,AP5_4_09,Numérico,1,1
+Confianza en Marina,AP5_4_09,,,b
+Confianza en Marina,AP5_4_09,,,3
+Confianza en Marina,AP5_4_09,,,2
+Percepción sobre corrupción de la Marina,AP5_5_09,,,2
+Percepción sobre corrupción de la Marina,AP5_5_09,,,9
+Percepción sobre corrupción de la Marina,AP5_5_09,,,b
+Percepción sobre corrupción de la Marina,AP5_5_09,Numérico,1,1
+Percepción sobre desempeño de la Marina,AP5_6_09,,,2
+Percepción sobre desempeño de la Marina,AP5_6_09,,,3
+Percepción sobre desempeño de la Marina,AP5_6_09,,,4
+Percepción sobre desempeño de la Marina,AP5_6_09,,,b
+Percepción sobre desempeño de la Marina,AP5_6_09,,,9
+Percepción sobre desempeño de la Marina,AP5_6_09,Numérico,1,1
+Identificación de jueces,AP5_3_10,,,9
+Identificación de jueces,AP5_3_10,,,2
+Identificación de jueces,AP5_3_10,Numérico,1,1
+Confianza en jueces,AP5_4_10,Numérico,1,1
+Confianza en jueces,AP5_4_10,,,3
+Confianza en jueces,AP5_4_10,,,4
+Confianza en jueces,AP5_4_10,,,9
+Confianza en jueces,AP5_4_10,,,2
+Confianza en jueces,AP5_4_10,,,b
+Percepción sobre corrupción de jueces,AP5_5_10,Numérico,1,1
+Percepción sobre corrupción de jueces,AP5_5_10,,,2
+Percepción sobre corrupción de jueces,AP5_5_10,,,9
+Percepción sobre corrupción de jueces,AP5_5_10,,,b
+Percepción sobre desempeño de jueces,AP5_6_10,,,3
+Percepción sobre desempeño de jueces,AP5_6_10,,,b
+Percepción sobre desempeño de jueces,AP5_6_10,,,4
+Percepción sobre desempeño de jueces,AP5_6_10,,,2
+Percepción sobre desempeño de jueces,AP5_6_10,Numérico,1,1
+Percepción sobre desempeño de jueces,AP5_6_10,,,9
+Confianza en cárceles y reclusorios,AP5_8,Numérico,1,1
+Confianza en cárceles y reclusorios,AP5_8,,,2
+Confianza en cárceles y reclusorios,AP5_8,,,4
+Confianza en cárceles y reclusorios,AP5_8,,,5
+Confianza en cárceles y reclusorios,AP5_8,,,9
+Confianza en cárceles y reclusorios,AP5_8,,,3
+Factor de personas elegidas,FAC_ELE,Numérico,6,"""000001  ... 999999"""
+Factor de personas elegidas del área metropolitana,FAC_ELE_AM,Numérico,6,"""000001  ... 999999"""
