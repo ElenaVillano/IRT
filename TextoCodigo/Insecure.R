@@ -38,8 +38,10 @@
 # insecure <- insecure[which(count==0),]
 
 rm(list=ls())
-
-insecure <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/clean_insecure.csv")
+# Ele
+# insecure <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/clean_insecure.csv")
+# Manu
+insecure <- read.csv("~/Documents/IRT/envipe_2016_csv/clean_insecure.csv")
 
 # Convierte los si==1, no==0
 insecure <- -1*(insecure-2)
