@@ -5,36 +5,41 @@
 
 
 ################# Analisis General #########################
+# 
+# # Limpia directorio de Trabajo
+# rm(list=ls())
+# 
+# # Base de datos con directorio
+# ENVIPE <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/tper_vic1_envipe2016/conjunto_de_datos/tper_vic1_envipe2016.csv")
+# 
+# # Selecciona la seccion de interes
+# insecure <- subset(ENVIPE,select=AP4_10_01:AP4_11_10) 
+# 
+# # Especificaciones generales de la seccion de la escala
+# n_items <-  length(insecure[1,])  # numero de items
+# n_obs <- length(insecure[,1])     # numero de observaciones
+# 
+# # Ciclo que reemplaza los numeros 3 y 9 con NAs
+# for(i in 1:n_items){
+#  insecure[,i][insecure[,i]%in%c(3,9)] <- NA 
+# }
+# 
+# 
+# # # Quita los que presentan mayor numero de NAs 
+# # insecure <- insecure[,-c(13,7,8)]
+# # 
+# # # Hace el conteo de cuantos NAs hay por persona (n_obs)
+# # count <- c()
+# # for(i in 1:n_obs){
+# #  count[i] <- sum(is.na(insecure[i,]))
+# # }
+# 
+# # Selecciona todos los sujetos que tuvieron cero NAs
+# insecure <- insecure[which(count==0),]
 
-# Limpia directorio de Trabajo
 rm(list=ls())
 
-# Base de datos con directorio
-ENVIPE <- read.csv("~/Documents/Psicometria/ProyectoFinal/envipe_2016_csv/tper_vic1_envipe2016/conjunto_de_datos/tper_vic1_envipe2016.csv")
-
-# Selecciona la seccion de interes
-insecure <- subset(ENVIPE,select=AP4_10_01:AP4_11_10) 
-
-# Especificaciones generales de la seccion de la escala
-n_items <-  length(insecure[1,])  # numero de items
-n_obs <- length(insecure[,1])     # numero de observaciones
-
-# Ciclo que reemplaza los numeros 3 y 9 con NAs
-for(i in 1:n_items){
- insecure[,i][insecure[,i]%in%c(3,9)] <- NA 
-}
-
-# Quita los que presentan mayor numero de NAs 
-insecure <- insecure[,-c(13,7,8)]
-
-# Hace el conteo de cuantos NAs hay por persona (n_obs)
-count <- c()
-for(i in 1:n_obs){
- count[i] <- sum(is.na(insecure[i,]))
-}
-
-# Selecciona todos los sujetos que tuvieron cero NAs
-insecure <- insecure[which(count==0),]
+insecure <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/clean_insecure.csv")
 
 # Convierte los si==1, no==0
 insecure <- -1*(insecure-2)
