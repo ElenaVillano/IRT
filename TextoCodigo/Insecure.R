@@ -10,7 +10,7 @@
 # rm(list=ls())
 # 
 # # Base de datos con directorio
-# ENVIPE <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/tper_vic1_envipe2016/conjunto_de_datos/tper_vic1_envipe2016.csv")
+#ENVIPE <- read.csv("~/Documents/Psicometria/ProyectoFinal/envipe_2016_csv/tper_vic1_envipe2016/conjunto_de_datos/tper_vic1_envipe2016.csv")
 # 
 # # Selecciona la seccion de interes
 # insecure <- subset(ENVIPE,select=AP4_10_01:AP4_11_10) 
@@ -39,20 +39,26 @@
 
 rm(list=ls())
 # Ele
-# insecure <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/clean_insecure.csv")
+insecure <- read.csv("~/Documents/Psicometria/IRT/envipe_2016_csv/clean_insecure.csv")
 # Manu
-insecure <- read.csv("~/Documents/IRT/envipe_2016_csv/clean_insecure.csv")
+#insecure <- read.csv("~/Documents/IRT/envipe_2016_csv/clean_insecure.csv")
 
 # Dario
-setwd("~/IRT")
-insecure <- read.csv("envipe_2016_csv/clean_insecure.csv")
+#setwd("~/IRT")
+#insecure <- read.csv("envipe_2016_csv/clean_insecure.csv")
 
 # Convierte los si==1, no==0
+insecure <- insecure[,-1]
 insecure <- -1*(insecure-2)
 
 # Redefinimos las informacion de nuestra base de datos
 n_items <- length(insecure[1,])
 n_obs <- length(insecure[,1])
+
+insecure_tct <- apply(insecure,1,sum)
+library(psych)
+
+alpha(cov(insecure))
 
 setwd("~/Documents/Psicometria/ProyectoFinal/TextoCodigo")
 pdf(file='Proporciones.pdf',width=6.2,height = 4)
@@ -70,6 +76,13 @@ barplot(colMeans(insecure),las=2,horiz=T,axes=F,names.arg = palabras_preguntas,
         col.axis='gray48')
 axis(3,at=seq(0,1,0.1),tck=0.01,padj =1.5,cex.axis=0.7,col.axis='gray48',col='gray48')
 dev.off()
+
+
+
+############### TCT###############
+
+
+
 
 #########Analisis IRT 1P##############
 # Libreria necesaria
@@ -91,17 +104,21 @@ hist(InsecureItem,breaks=100)
 hist(InsecurePersona,breaks=100)
 
 #curvas teoricas dadas el minimo y maximo de habilidad para las thetas (items)
-pdf(file="Curvas.pdf",width = 6.2, height=4)
-layout(1)
+pdf(file="Curvas_emp.pdf",width = 6.2, height=8)
+layout(matrix(c(1:24),ncol=3,byrow=T))
 par(mar=c(2,2,1,1),oma=c(1,1,1,1))
-plot(0,type='n',xlim=c(-4,4),ylim=c(0,1),axes=F)
-axis(1,cex.axis=0.7,tck=-0.03,padj=-1.5,col='gray48',col.axis='gray48')
-mtext(expression(theta),1,line=1.8,col='gray48')
-mtext(expression(f (theta)),2,las=2,line=1.5,col='gray48')
-axis(2,las=2, cex.axis=0.7,tck=-0.03,hadj=0.5,col='gray48',col.axis='gray48')
+n_theta <- length(unique(InsecurePersona))
+theta_s <- sort(unique(InsecurePersona))
 for(i in 1:n_items){
+plot(0,type='n',xlim=c(-4,6),ylim=c(0,1),axes=F)
+axis(1,cex.axis=0.5,tck=-0.03,padj=-1.5,col='gray48',col.axis='gray48')
+mtext(expression(theta),1,line=1.8,col='gray48',cex=0.5)
+mtext(expression(f (theta)),2,las=2,line=1.5,col='gray48',cex=0.5)
+axis(2,las=2, cex.axis=0.5,tck=-0.03,hadj=0.5,col='gray48',col.axis='gray48')
  curve(plogis(x,InsecureItem[i]),from=-4,to=max(InsecurePersona),
-       ylim=c(0,1),col='turquoise4',add=T)
+       ylim=c(0,1),col='turquoise3',add=T)
+ prop <- by(insecure[,i],factor(InsecurePersona),mean)
+ lines(theta_s,prop,col="tomato",lwd=1)
  
 }
 dev.off()
