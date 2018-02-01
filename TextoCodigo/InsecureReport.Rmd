@@ -1,8 +1,9 @@
 ---
-title: "Evaluación de la ENVIPE con TRI"
-subtitle: "Villalobos Elena, Trujano Dario y Villarreal Manuel"
+title: "Evaluaci<c3><b3>n de la ENVIPE con TRI"
+subtitle: Villalobos Elena, Trujano Dario y Villarreal Manuel
 output:
   pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -26,12 +27,12 @@ insecure_tct <- apply(insecure,1,sum)
 ```
 
 
-El objetivo del presente trabajo fue medir la percepción de inseguridad a través de los datos obtenidos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) 2016. Para aproximar cuantitativamente el constructo de *percepción de inseguridad*, se utilizó el marco de la Teoría de Respuesta al Item (TRI). Esta teoría nos permite calcular el nivel de percepción de inseguridad de cada persona así como la capacidad que tiene el reactivo para evaluar dicho constructo. Adicionalmente, se obtiene un indicador único de la percepción de inseguridad en el país, el cual puede ser utilizado para una toma de decisiones más eficiente. La TRI fue concevida como una alternativa a la Teoría Clásica de los Tests (TCT) para solucionar diversos problemas. En cuanto a la medición de la percepción de inseguridad del país, se utilizó la ENVIPE que es realizada anualmente por el INEGI con una muestra con representatividad nacional.
+El objetivo del presente trabajo fue medir la percepción de inseguridad a través de los datos obtenidos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) 2016. Para aproximar cuantitativamente el constructo de *percepción de inseguridad*, se utilizó el marco de la Teoría de Respuesta al Item (TRI). Esta teoría nos permite calcular el nivel de percepción de inseguridad de cada persona así como la capacidad que tiene el reactivo para evaluar dicho constructo. Adicionalmente, se obtiene un indicador único de la percepción de inseguridad en el país, el cual puede ser utilizado para una toma de decisiones más eficiente. La TRI fue concebida como una alternativa a la Teoría Clásica de los Tests (TCT) para solucionar diversos problemas. En cuanto a la medición de la percepción de inseguridad del país, se utilizó la ENVIPE que es realizada anualmente por el INEGI con una muestra con representatividad nacional.
 
 ##ENVIPE
 La ENVIPE consta de diversas secciones de las cuales sólo se tomó la CC2 (Figura 1) para fines del trabajo. La sección CC2 contiene dos sub-cuestionarios; al primero se quitaron las preguntas 07, 08 y 13, debido a que contenían una gran cantidad de respuestas no válidas (no sabe o no responde). Después sólo se tomaron a los participantes que contestaron todas las preguntas en dichos sub-cuestionarios. En total se analizaron 14528 participantes alrededor del país de las 85744 que estaban en la muestra inicial. La respuesta de NO se codificó con 0 y la respuesta SÍ como 1.
 
-![Sección CC2. de la ENVIPE](Cuestionario.png){height=200px}
+![Sección CC2. de la ENVIPE](Cuestionario.png){height=220px}
 
 
 ##Teoría Clásica de los Tests 
@@ -43,7 +44,7 @@ donde $x_{ij}$ toma el valor de 1 cuando el sujeto $i$ respondió correctamente 
 
 Un problema con la estructura de este modelo es que si se cuenta con sólo una repetición del test no hay forma de calcular la habilidad real del sujeto. Por lo tanto, debe suponerse que bajo una repetición todos los sujetos tienen una misma T, de manera que los errores puedan ser estimados. Otro problema es que en este modelo cada item mide de igual manera la habilidad real, lo cual puede no ser el caso. 
 
-Tradicionalmente, para evaluar un test se calcula el alpha de Crombach la cual mide la consistencia interna del test mediante una cota inferior de la confiabilidad del test. De acuerdo al análisis de la ENVIPE esta alpha resulto ser de 0.88.
+Tradicionalmente, para evaluar un test se calcula el alpha de Crombach la cual mide la consistencia interna del test mediante una cota inferior de la confiabilidad del test. De acuerdo al análisis de la ENVIPE esta alpha resulto ser de 0.88 (Tabla 1.).
 
 ```{r, include=FALSE}
 alpha_c <- alpha(cov(insecure))
@@ -51,8 +52,8 @@ alpha_c <- alpha_c$total
 ```
 
 ```{r, results='asis'}
-#colnames(alpha_c)[1] <- c(alpha)
-stargazer(alpha_c,summary = F)
+#colnames(alpha_c)[1] <- c('hola','SD',)
+stargazer(alpha_c,summary = F,title = 'Alpha de Crombach de la ENVIPE',header = F)
 ```
 
 Sin embargo, el $\alpha$ de Crombach es sólo una medida de confiabilidad del test y no podemos decir nada de los sujetos, ni de los reactivos. 
@@ -65,30 +66,41 @@ $$
 P(x_{ij}=1|\theta_{i},\beta_{j}) = \frac{e^{\theta_i-\beta_j}}{1+e^{\theta_i-\beta_j}}
 $$
 
-En donde $\theta_i$ representa la habilidad del sujeto y $\beta_j$ la dificultad del reactivo. En el presente trabajo la habilidad se refiere a la percepción de inseguridad, mientras que la dificultad del reactivo está asociada al nivel de percepción de inseguridad necesario para que un sujeto responda de manera afirmativa a la pregunta con una probabilidad de 0.5. Esto implica que a mayor percepción de inseguridad se espería una mayor cantidad de respuestas afirmativas. A continuación se presenta este análisis. 
+En donde $\theta_i$ representa la habilidad del sujeto y $\beta_j$ la dificultad del reactivo. En el presente trabajo la habilidad se refiere a la percepción de inseguridad, mientras que la dificultad del reactivo está asociada al nivel de percepción de inseguridad necesario para que un sujeto responda de manera afirmativa a la pregunta con una probabilidad de 0.5. Esto implica que a mayor percepción de inseguridad se espera una mayor cantidad de respuestas afirmativas; a continuación se presenta este análisis. 
 
 #Resultados
 La Figura 2. muestra la proporción de personas que contestaron afirmativamente en cada una de las preguntas. El reactivo con la mayor proporción es "dejó de permitir que los menores de edad salieran solos"; seguido por las preguntas, "dejó de usar joyas"" y "dejo de salir de noche". Por otra parte el reactivo "adquirió armas de fuego" tuvo la menor proporción de respuestas afirmativas, seguido por "cambiarse de vivienda". 
 
-![Proporciones de respuestas afirmativas.](Proporciones.pdf)
+![Proporciones de respuestas afirmativas a cada reactivo.](Proporciones.pdf)
 
 ##Análisis con Modelo de Rash
-En la Figura 3. se puede observar el comportamiento teórico dada la estimación del parámetro $\beta_j$, que para la encuesta realizada implica que para responder afirmativamente a cada pregunta se requiere mayor percepción de inseguridad. Se observa que los Así mismo se observa que los items que implican mayor percepción de inseguridad tienen menor probabilidad de ser respondidos para las personas que de hecho perciben mayor inseguridad. 
+En la Figura 3. se muestran los histogramas de $\beta$ (lado izquierdo) y $\theta$
+(lado derecho). En estos se observa que de acuerdo al modelo de Rash que 11 de los reactivos tienen una dificultad de entre 0.5 y 2, que representa la mitad de las preguntas. Por otra parte en el histograma de $\theta$ se observa un pico cercano a -4, cabe destacar que el valor asignado a estos sujetos no puede ser estimado de manera correcta debido a que respondieron que no a todas las preguntas. El resto de la población se encuentra en valores que van desde -2 hasta 6. La forma de dicho gráfico indica que se tienen más personas con una baja percepción de inseguridad, tomando la media como punto de referencia, que personas con alta percepción de inseguridad. 
 
-La Figura 4. se observan las proporciones de personas que respondieron que si dado su valor de theta. En este gráfico los que implican mayor percepción de inseguridad (mayor dificultad) tienen el color rojo más concentrado y viceversa para los que implican menor percepción. En este gráfico es más claro que los items con mayor dificultad tienen menor proporción de personas que afirmaron las preguntas dado que tienen mayor percepción de inseguridad. 
+![Curvas Teóricas dado el parámetro de beta para cada item.](histogramas.pdf)
 
-Por último la figura 5. tiene 21 sub-graficos cada uno representa dado un único parámetro de theta la proporción de afirmaciones en cada uno de los items, los cuales se encuentran ordenados del más fácil al más difícil (menor percepción de inseguridad a mayor percepción de inseguridad). En este se observa que para el valor más pequeño de theta la proporción de afirmaciones en todos los items es de cero. Conforme incrementa el valor de theta se van aumentando las proporciones para los items que implican menor percepción de inseguridad. Cabe de notar, que incluso para las thetas que tienen mayor valor, los items más difíciles tienen muy poca proporción de afirmaciones. 
+
+En la Figura 4. hay 22 sub-gráficos cada uno correspondiente a un reactivo. La línea azul es la Curva característica del item (CCI) y la línea roja representa la proporción de participantes que contestaron que "Sí" dado cada valor único de $\theta$. De manera general, se observa que la mayoría de las curvas alcanzan el valor de 0.5 para valores de $\theta$ entre 0 y 2. Mientras que existen preguntas que nunca alcanzan una probabilidad de 0.5 (reactivos 2.9 y 2.10).
+
+Por último, la Figura 5. tiene 21 sub-gráficos cada uno representa la proporción de personas que, con un mismo valor de $\theta$, respondieron afirmativamente a cada reactivo. Las preguntas se encuentran ordenadas de acuerdo a su valor estimado de $\beta$ -de la más fácil a la más difícil-. En este se observa que para el valor más pequeño de $\theta$ la proporción de afirmaciones en todos los reactivos es de cero. Conforme incrementa el valor de $\theta$ se van aumentando las proporciones para los reactivos que requieren menor percepción de inseguridad para ser contestados afirmativamente. Adicionalmente, se puede notar que incluso en los grupos de personas cuya estimación de $\theta$ es mayor, los reactivos más difíciles tienen una baja proporción de afirmaciones. 
+
+![Curvas Características del Item (línea azul) y proporciones de afirmaciones dados los valores de $\theta$ (línea roja).](Curvas_emp.pdf)
+
+
+
+![Proporción de personas que con un mismo valor de $\theta$ respondieron afirmativamente a cada reactivo. ](barras.pdf)
 
 #Discusión
-Los resultados indican que los items que contienen mayor percepción de inseguridad pueden estár mal calibrados debido a que no necesariamente con mayor valor del atributo de interés la probabilidad de responder incremente. Contextualmente puede indicar que los items con mayor percepción de inseguridad, no necesariamente lo son para todos los participantes. 
+El objetivo del presente trabajo fue el de presentar a la TRI como una alternativa a la TCT para evaluar la ENVIPE. A partir de la TCT sólo es posible concluir que el segmento de la encuesta utilizado, tiene una consistencia interna adecuada (0.88). Sin embargo, este resultado no permite hacer aseveraciones sobre las características de los sujetos y/o de los reactivos más allá de la presentación de la proporción de veces que cada sujeto respondió que "sí". Por otro lado, los análisis realizados mediante el modelo de Rash muestran que si bien es posible asignar un valor numérico a la percepción de inseguridad de cada sujeto, los reactivos que pertenecen a esta parte de la encuesta presentan algunos problemas, los cuales pueden ser observados bajo este método. 
+
+Refiriéndose a la percepción de inseguridad de los participantes, se observó que la mayoría sus patrones de respuesta pueden ser explicados por valores bajos de $\theta$. En otras palabras, la mayoría de los sujetos no ha dejado de realizar las actividades nombradas en la escala. Estos resultados señalan uno de los primeros problemas con esta sección de la encuesta, el cual es que más de una pregunta se contesta de manera negativa normalmente, por ejemplo, la pregunta "adquirir armas de fuego?" fue respondida afirmativamente solo por el 1% de la muestra. Relacionado a esto, todos los participantes que tuvieron los valores de $\theta$ muy bajos siempre respondieron que "no" a todas las preguntas, por lo tanto no es posible saber si existen diferencias en la percepción de inseguridad entre estos participantes. 
+
+Con respecto a la evaluación de los reactivos se observó solo 4 reactivos (de 22) tienen una dificultas por valores debajo de cero, lo que quiere decir que la mayoría de las preguntas en la escala requieren de una gran cantidad del rasgo para ser respondidas de manera afirmativa. Esto implica que para dejar de realizar las conductas que se presentan en la escala los participantes requieren de una alta percepción de inseguridad. Por lo tanto, estas preguntas no permiten evaluar aquellas personas cuya percepción de inseguridad es menor.
+
+Finalmente, se observó que al separar las proporciones de respuestas afirmativas de cada pregunta en función del valor de $\theta$ se observó que en algunos casos, sujetos con valores altos de percepción de inseguridad respondieron negativamente a los reactivos que se consideraron más difíciles. Esto puede indicar que el modelo no se ajusta de manera correcta a los datos. Por otro lado, estos patrones de elección muestran que para algunos de los reactivos se requieren cambios más pequeños en $\theta$ para alcanzar proporciones más altas de respuestas afirmativas. Lo que sugiere que un modelo con dos parámetros podría resultar más adecuado para esta escala. 
 
 
 
-![Curvas Teóricas dado el parámetro de beta para cada item.](Curvas_emp.pdf)
-
-
-
-![thetas](barras.pdf)
 
 
 

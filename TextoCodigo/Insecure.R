@@ -60,15 +60,15 @@ library(psych)
 
 alpha(cov(insecure))
 
-setwd("~/Documents/Psicometria/ProyectoFinal/TextoCodigo")
+setwd("~/Documents/Psicometria/IRT/TextoCodigo")
 pdf(file='Proporciones.pdf',width=6.2,height = 4)
-palabras_preguntas <- c('1. salir noche','2. menor solo','3. visitar',
-                        '4. tomar taxi', '5. transporte','6. efectivo',
-                        '9. caminar','10. joyas','11. salir','12. tarjeta',
-                        '14. centros','15. viajar', '1. reforzar', 
-                        '2. cerraduras', '3. bardas', '4. alarmas', 
-                        '5. vigilancia','6. vecinos','7. seguros',
-                        '8. perro', '9. armas','10. mudarse')
+palabras_preguntas <- c('1.1 salir noche','1.2. menor solo','1.3. visitar',
+                        '1.4. tomar taxi', '1.5. transporte','1.6. efectivo',
+                        '1.9. caminar','1.10. joyas','1.11. salir','1.12. tarjeta',
+                        '1.14. centros','1.15. viajar', '2.1. reforzar', 
+                        '2.2. cerraduras', '2.3. bardas', '2.4. alarmas', 
+                        '2.5. vigilancia','2.6. vecinos','2.7. seguros',
+                        '2.8. perro', '2.9. armas','2.10. mudarse')
 
 par(mar=c(0,3,2,1),oma=c(1,1,1,1))
 barplot(colMeans(insecure),las=2,horiz=T,axes=F,names.arg = palabras_preguntas,
@@ -99,29 +99,45 @@ Insecure <- tam.wle(irt_insecure)
 InsecurePersona <- Insecure$theta
 
 # Histogramas
-layout(matrix(c(1:2),ncol=1))
-hist(InsecureItem,breaks=100)
-hist(InsecurePersona,breaks=100)
+pdf(file='histogramas.pdf',width = 6.2, height = 4)
+layout(matrix(c(1:2),ncol=2))
+par(mar=c(2,2,2,1),oma=c(0.5,0.5,0.5,0.5))
+hist(InsecureItem,breaks=100,main = '',axes=F,xlim=c(-2,6),
+     col='yellowgreen',border='yellowgreen')
+mtext('Histogramas',3,adj=1.4,col='gray48',line=1.2)
+axis(1,cex.axis=0.6,tck=-0.03,padj=-1.5,col='gray48',col.axis='gray48')
+axis(2,las=2, cex.axis=0.6,tck=-0.03,hadj=0.5,col='gray48',col.axis='gray48')
+text(4,1.5,expression(beta),col='gray',cex=3)
+hist(InsecurePersona,breaks=100,main = '',axes=F,xlim=c(-4,6),
+     col='orange',border='orange')
+text(3,1500,expression(theta),col='gray',cex=3)
+axis(1,cex.axis=0.6,tck=-0.03,padj=-1.5,col='gray48',col.axis='gray48')
+axis(2,las=2, cex.axis=0.6,tck=-0.03,hadj=0.5,col='gray48',col.axis='gray48')
+dev.off()
 
 #curvas teoricas dadas el minimo y maximo de habilidad para las thetas (items)
 pdf(file="Curvas_emp.pdf",width = 6.2, height=8)
-layout(matrix(c(1:24),ncol=3,byrow=T))
-par(mar=c(2,2,1,1),oma=c(1,1,1,1))
+layout(matrix(c(1:21,23,22,23),ncol=3,byrow=T))
+par(mar=c(1,1,1,1),oma=c(1,2,1,0))
 n_theta <- length(unique(InsecurePersona))
 theta_s <- sort(unique(InsecurePersona))
 for(i in 1:n_items){
 plot(0,type='n',xlim=c(-4,6),ylim=c(0,1),axes=F)
-axis(1,cex.axis=0.5,tck=-0.03,padj=-1.5,col='gray48',col.axis='gray48')
-mtext(expression(theta),1,line=1.8,col='gray48',cex=0.5)
-mtext(expression(f (theta)),2,las=2,line=1.5,col='gray48',cex=0.5)
-axis(2,las=2, cex.axis=0.5,tck=-0.03,hadj=0.5,col='gray48',col.axis='gray48')
+text(-1,0.8,palabras_preguntas[i],cex=1.2,col='gray')
+axis(1,cex.axis=0.5,tck=-0.03,padj=-3,col='gray48',col.axis='gray48')
+mtext(expression(theta),1,line=0.8,col='gray48',cex=0.5)
+mtext(expression(f (theta)),2,las=2,line=1.2,col='gray48',cex=0.5)
+axis(2,las=2,at=c(0,0.5,1), cex.axis=0.5,tck=-0.03,hadj=0.2,col='gray48',col.axis='gray48')
  curve(plogis(x,InsecureItem[i]),from=-4,to=max(InsecurePersona),
-       ylim=c(0,1),col='turquoise3',add=T)
+       ylim=c(0,1),col='turquoise3',add=T,lwd=2)
  prop <- by(insecure[,i],factor(InsecurePersona),mean)
- lines(theta_s,prop,col="tomato",lwd=1)
+ lines(theta_s,prop,col="tomato",lwd=2)
  
 }
 dev.off()
+
+plot(InsecurePersona,apply(insecure,1,sum))
+
 
 
 id_InsecureItem <- cbind(InsecureItem,c(1:22))
