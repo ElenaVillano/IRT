@@ -138,9 +138,15 @@ dev.off()
 
 plot(InsecurePersona,apply(insecure,1,sum))
 
+palabras_preguntas2 <- c('1.1','1.2.','1.3.',
+                        '1.4.', '1.5.','1.6.',
+                        '1.9.','1.10.','1.11.','1.12.',
+                        '1.14.','1.15.', '2.1.', 
+                        '2.2.', '2.3.', '2.4.', 
+                        '2.5.','2.6.','2.7.',
+                        '2.8.', '2.9.','2.10.')
 
-
-id_InsecureItem <- cbind(InsecureItem,c(1:22))
+id_InsecureItem <- cbind(InsecureItem,c(1:22),palabras_preguntas2)
 ordered_id_InsecureItem <- id_InsecureItem[order(InsecureItem),]
 
 # Para valores unicos de dificultad, cuantas thetas hay 
@@ -149,12 +155,12 @@ layout(matrix(c(1:21),ncol=3,byrow=T))
 par(mar=c(2,2,2,2),oma=c(1,1,1,1))
 for(i in 1:length(unique(InsecurePersona))){
  theta_min <- subset(insecure,InsecurePersona==sort(unique(InsecurePersona))[i])
- theta_min_or <- theta_min[,c(ordered_id_InsecureItem[,2])]
+ theta_min_or <- theta_min[,as.numeric(c(ordered_id_InsecureItem[,2]))]
  plot(0,type='n',xlim=c(0,22),ylim=c(0,1),axes=F)
- barplot(colMeans(theta_min_or),add=T,axes=F,las=2,names.arg=paste(ordered_id_InsecureItem[,2]),
+ barplot(colMeans(theta_min_or),add=T,axes=F,las=2,names.arg=paste(ordered_id_InsecureItem[,3]),
          cex.names=0.8,tck=-0.03,col='turquoise4',border='turquoise4',
          col.axis='gray48',line=-0.5)
- text(paste('=',round(ordered_id_InsecureItem[i,1],3)),x = 14,y = 0.8,cex=0.8)
+ text(paste('=',round(as.numeric(ordered_id_InsecureItem[i,1]),3)),x = 14,y = 0.8,cex=0.8)
  text(expression(theta),x = 11,y = 0.8,cex=0.8)
  axis(2,at=seq(0,1,0.2),tck=0.01,cex.axis=0.6,col.axis='gray48',col='gray48',las=2,hadj = 0.5)
 }
